@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "jupyter": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/datalayer/jupyter-mcp-server",
+        "jupyter-mcp-server"
+      ],
+      "env": {
+        "JUPYTER_TOKEN": "datathon-token-2025"
+      }
+    },
+    "github": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/github/github-mcp-server",
+        "github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}"
+      }
+    },
+    "filesystem": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-filesystem",
+        "/Users/nmduk/Datathon"
+      ]
+    },
+    "data-exploration": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/reading-plus-ai/mcp-server-data-exploration",
+        "mcp-server-data-exploration"
+      ]
+    }
+  }
+}

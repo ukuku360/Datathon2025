@@ -1,0 +1,46 @@
+requirements.txt
+.env
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (add specific patterns as needed)
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.xlsx
+*.h5
+*.pkl
+*.joblib
+
+# Model files
+models/*.pkl
+models/*.h5
+models/*.joblib
+models/*.pt
+models/*.pth
+
+# Output files
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
